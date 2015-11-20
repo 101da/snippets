@@ -1,0 +1,191 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*#qrcode {
+  display: none;
+}*/
+body {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  color: black;
+  margin: 0em auto;
+  max-width: 80%;
+  text-decoration: none;
+  position: relative;
+}
+body a {
+  color: black;
+  text-decoration: none;
+}
+body a:visited {
+  color:black;
+}
+.link_a {
+    color:#FC971B;
+    text-decoration: underline;
+} /*Adressierung verbessern*/
+.link_a:visited {
+    color:#FC971B;
+}
+/*#menubutton {
+  display: inline;
+  width: 2em;
+  background-color: white;
+  position: fixed;
+  float:right;
+  margin: 0 0 0 0;
+}*/
+#menubutton {
+  width: 2em;
+  margin: 0.25em 0em 100% 0.25em;
+  float: right;
+  background-color:#FFFFFF;
+  cursor: pointer;
+}
+#close_menu {
+  width: 1.5em;
+  margin: 0.5em 0.25em 0.25em 0em;
+  float: left;
+  background-color:#FFFFFF;
+  cursor: pointer;
+}
+.nav ul, .nav li, .nav a {              /*Textfarben-Problem beim ersten aufrufen (Links sind blau)*/
+  text-decoration: none;
+  color: black;
+}
+/*.nav li:hover li:active {    /*active klappt nicht (immer noch)
+  background-color:#ACAAB0;
+  transition: 0.5s ease-in;
+  transition:  0.2s ease-out;
+}*/
+.nav ul {
+  margin-top: 3em;
+}
+.popup_hide {
+    display: none;
+    padding-left: 1em;
+} /*wird ausgeklappt*/
+.nav {
+  float: left;
+  max-width: 100%;
+  min-width: 20%;
+  height: 100%;
+  left: -15%;
+  padding: 0% 1% 0% 0.5%;
+  top: 0em;
+  position: fixed;
+  background-color: white;
+  z-index: 998;
+}
+body .toppic {
+  background-image: url("../Bilder/unsplash_by_LucaZanon.png");
+  background-position: 50% 110%;
+  width: 100%;
+  height: 5em;
+  background-size: auto;
+  background-size: cover;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /*border-radius:0.5em;*/
+}
+.headline {
+    border-bottom:1px solid #919590;
+    border-top:1px solid #919590;
+    margin-top: 1em;
+}
+#headline_icon {
+    width: 1em;
+}
+.headline h2 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+.navfooter #navfooter_Impressum, .navfooter #navfooter_Sitemap  {
+    margin: 1em;
+    border-color: transparent;
+    border-radius: 0.25em;
+    background-color: #E6761A;
+    padding: 0.125em;
+}
+.navfooter #navfooter_Impressum:hover, .navfooter #navfooter_Sitemap:hover  {
+    background-color: #E67650;
+    color: white;
+    transition-duration: 0.5s; 
+}
+.top {
+  float: right;
+}
+.help {
+    position: fixed;
+    background-color:white;
+    bottom: 0em;
+    right: 0em;
+    left: 0em;
+    text-align: center;
+    min-height: 10%;
+    max-height: 75%;
+    z-index: 999;
+}
+.help p {
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
+}
+#close_help {
+    width: 1em;
+    float: right;
+    cursor: pointer;
+}
+#example_menubutton {
+    width: 1em;
+}
+/*Unterseiten spezifisch*/
+
+#SchwerpunkteBerufserfahrung_ausgeuebte_Berufe {
+  table-layout: fixed;   /*auto oder fixed; overflow:hidden gibts auch noch*/
+}
+#SchwerpunkteBerufserfahrung_ausgeuebte_Berufe td, th {
+  border: 1px solid;
+  border-color: transparent;
+}
+#SchwerpunkteBerufserfahrung_Datum_Tabelle {
+  width: 7em;
+  /*width: 7em*/
+}
+#SchwerpunkteBerufserfahrung_Text_Tabelle {
+  width: 15em;
+  /*width: 15em*/
+}
+body .Sitemap_Auflistung a {
+    color: #1957BA;
+}
+
+body .Sitemap_Auflistung a:hover {
+    color: #4B8ED1;
+}
+
+body .Sitemap_Auflistung a:visited { /*a:visited:hover*/
+    color: #8E4BD1;
+}
+
+body .Sitemap_Auflistung li {
+    list-style-type: none;
+}
+
+/*>>>Allgemein<<<*/
+@media screen and (max-width: 450px) {
+    body {
+    font-size:1.5em;
+    /*besser wäre 1em*/
+   }
+}
+@media screen and (max-width: 1300px) {
+    body {
+    max-width:100%;
+    /*besser wäre 1em*/
+   }
+}
